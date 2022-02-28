@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="/style.css">
+        <script src="https://kit.fontawesome.com/ff8a8ba3fb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header><h3>To Do List</h3></header>
+            <div class="inputfield">
+                <div><input type="text" placeholder="Add your new to do.."  id="input-text"></div>
+                <div><button id="add-button"><i class="fa-solid fa-plus"></i></button></div> 
+            </div>
+            <div class="list">
+                <ul id="todo-list">
+                    <!-- list will be added from local storage -->
+                </ul>
+            </div>
+            <div class="footer">
+                <h3>Total no of task : <span id="totaltask"></span> </h3>
+                <button class="" id="clear-all">clear all</button>
+            </div>
+        </div>
+        <script src="/script.js"></script>
+    </body>
+</html>

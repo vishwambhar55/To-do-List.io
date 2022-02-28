@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+:root{
+    --bd-bg-color:  ;
+    --wr-bg-color: #E9DAC1 ;
+    --in-li-bg-color:#F7ECDE;
+    --bg-color: #FBF8F1;
+    --darkred-color:#FF0000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+   height: 100vh;
+   width: 100%;
+   background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff); 
+}
+.wrapper{
+    margin : 120px auto;
+    max-width: 400px;
+    background-color: var(--wr-bg-color);
+    width: 100%;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/* style for heading */
+.wrapper header{
+    font-size: 30px;
+    text-align: center;
+}
+/* style for inputfield */
+.wrapper .inputfield{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 0px;
+    height: 60px;
+    background-color:var(--in-li-bg-color);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.inputfield > div{
+    margin-top: 1.5px;
+    padding: 10px;
+}
+.inputfield input{
+    padding-left: 2px;
+    height: 40px;
+    width: 275px;
+    background-color:var(--bg-color);
+    border-radius: 3px;
+    border: 0;
+}
+/* add button  */
+.inputfield button{
+    border: none;
+    outline: none;
+    background-color:purple;
+    color: #ECECEC;
+    height: 40px;
+    width :40px;
+    font-size: 22px;
+    cursor: pointer;
+    opacity: 0.6;
+    pointer-events: none;
+}
+/* this is js class */
+.inputfield button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+/* style for list of tasks */
+ .wrapper .list{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin: 10px 0px;
+     background-color:var(--in-li-bg-color);
+     border-radius: 5px;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     list-style-type: none;
+     max-height: 250px;
+     overflow-y: auto;
+     
+ }
+ ul >li {
+    list-style-type: none;
+    padding: 5px 15px;
+    max-height: 100px;
+    min-width: 275px;
+    background-color:var(--bg-color);
+    margin-bottom: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    
+ }
+ 
+ li span{
+     margin-left: 10px;
+    font-family: 'Caveat', cursive;
+    font-size: x-large;
+ }
+ /* check box  */
+ input[type=checkbox]:checked + span {
+    color:green !important;
+    text-decoration: line-through;
+  }
+  /* delete button  */
+ li .delete{
+     float: right;
+     color: #FF1818;
+     font-size: 22px;
+     cursor: pointer;
+ }
+
+.wrapper .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+} 
+/* clear all button  */
+.footer button{
+    border: none;
+    outline: none;
+    background-color: #C70039; 
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px 10px;
+}
+
+
+ 
+ 
+
